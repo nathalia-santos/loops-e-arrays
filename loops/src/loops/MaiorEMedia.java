@@ -8,16 +8,20 @@ public class MaiorEMedia {
 		
 		int numero;
 		int maior = 0;
+		int soma = 0;
 		int cont = 0;
 		
 		do {
 			System.out.println("Número: ");
 			numero = scan.nextInt();
 			cont = cont + 1;
+			soma += numero;
 			if (numero > maior) {
 				maior = numero;
 			}
 		}while(cont < 5);
+		
 		System.out.println(maior);
+		System.out.println(soma/5);
 	}
 }
